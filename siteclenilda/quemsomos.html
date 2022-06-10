@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<title>Paralelo Eletro</title>
+	<div id="titulo-inicial">
+		<h2 id="h2_quemsomos">Paralelo Eletro</h2>
+	</div>
+</head>
+
+<body onload="ocultar_dados_formularios()">
+	<nav id="menu-inicial">
+		<ul class="menu">
+			<li><a href="index.html">Início</a></li>
+			<li><a href="notebook.html">Notebook</a></li>
+			<li><a href="celulares.html">Smartphone</a></li>
+			<li><a href="energiasolar.html">Energia Solar</a></li>
+			<li><a href="quemsomos.html">Quem Somos</a></li>
+		</ul>
+	</nav>
+
+	<div class="destaque">
+		<div id="pagina-quemsomos">
+			<br/>
+			<h3><strong>Quem somos</strong></h3><br>		
+		</div>
+
+
+	</div>
+	<div id="quemsomos">
+		<div class="box-quemsomos">
+			<img src="img/logo.png" id="logo">
+			<h3>
+				Somos uma loja online que ajuda você a fazer escolhas inteligentes.
+				Somos uma curadoria tech, e por isso selecionamos o que há de melhor em tecnologia e explicamos o que
+				você precisa saber para que suas compras sejam feitas de um jeito simples e fácil.
+			</h3>
+		</div>	
+	</div>
+
+
+	 <div class="registration-form">
+        <form>
+			<h2 class="text-center">Fale Conosco</h2>
+            <div class="form-icon">
+                <span><i class="icon icon-user"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="cpf" placeholder="CPF*" data-validate="CPF é Obrigatporio">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="nome" placeholder="Nome*" data-validate="Nome é Obrigatório">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="email" placeholder="E-mail*" data-validate="Email é Obrigatório">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item" id="telefone" placeholder="Telefone*" data-validate="Telefone é Obrigatório">
+            </div>
+			<div class="form-group">
+				<select type="text"  class="from-control item" name="assunto" id="assunto" style="width: 860px;" placeholder="Assunto*" data-validate="Escolha Um Assunto" >
+					<option value="Nenhum Assunto Escolhido">Escolha Um Assunto</option>
+					<option value="Notebooks">Notebooks</option>
+					<option value="Smartphones">Smartphones</option>
+					<option value="Energia Solar">Energia Solar</option>
+					<option value="Agradecimentos">Agradecimentos</option>
+					<option value="Criticas">Criticas</option>
+				</select>
+			</div>
+			<div class="form-group">
+                <input type="text" class="form-control item" rows="14" name="message" id="mensagem" placeholder="Mensagem*" data-validate="Mensagem é Obrigatória"  style="height:100px">
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-block create-account" onclick="exibir_formulario()">Enviar</button>
+            </div>
+
+        </form>
+
+        <div class="dados_formulario">
+            <h5>Registro das Informações Envidas</h5>
+            <div id="dados_formulario">
+				<p>CPF: <span id="exibir_cpf"></span></p>
+				<p>Nome: <span id="exibir_nome"></span></p>
+				<p>E-mail: <span id="exibir_email"></span></p>
+				<p>Telefone: <span id="exibir_telefone"></span></p>
+				<p>Assunto: <span id="exibir_assunto"></span></p>
+				<p>Mensagem: <span id="exibir_mensagem"></span></p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+	<div id="rodape_quesomos">
+		<footer>
+			<div>
+				<ul>
+					<li><p><strong>Paralelo Eletro</strong></p></li>
+					<li><p><strong>Rua Desembargador Berilo Mota, 3392</strong></p></li>
+					<li><p><strong><a href="https://api.whatsapp.com/send?phone=5586999657452&text=Ol%C3%A1%2Ctudo%20bem!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20projetos.">Whatsapp: (86) 9965-7452</a></strong></p></li>
+					<li><p><strong>Teresina - PI</strong></p></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+
+
+</html>
+
+
+
+
+
+
